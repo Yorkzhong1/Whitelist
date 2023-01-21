@@ -37,7 +37,7 @@ export default function Home() {
 
     // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 1337) {   //change to 5 for Goerli
+    if (chainId !== 5) {   //change to 5 for Goerli
       window.alert("Change the network to Goerli");
       throw new Error("Change network to Goerli");
     }
@@ -199,7 +199,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to AlphaDAO!</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
           </div>
@@ -214,7 +214,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by AlphaDAO
       </footer>
     </div>
   );
